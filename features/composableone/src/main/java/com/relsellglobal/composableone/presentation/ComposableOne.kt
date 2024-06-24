@@ -38,33 +38,6 @@ fun ComposableOne(navigator: NavController) {
 
     DestinationDemoTheme {
         Scaffold(
-            topBar = {
-                TopAppBar(
-                    title = { Text("Destination Demo Detail") },
-                    colors = TopAppBarDefaults.topAppBarColors(
-                        containerColor = MaterialTheme.colorScheme.primary, // Customize your background color here
-                        titleContentColor = Color.White // Customize your title color here
-                    ),
-                    navigationIcon = {
-                        IconButton(onClick = {
-                            //navigator.navigate(ComposableOneDestination())
-                            navigator.popBackStack()
-                        }) {
-                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
-                        }
-                    }
-                )
-            },
-
-            floatingActionButton = {
-                FloatingActionButton(onClick = {
-                    scope.launch {
-                        snackbarHostState.showSnackbar("FAB Clicked")
-                    }
-                }) {
-                    Icon(Icons.Default.Add, contentDescription = "Add")
-                }
-            },
             snackbarHost = { SnackbarHost(snackbarHostState) },
             content = { padding ->
                 Box(
@@ -82,9 +55,8 @@ fun ComposableOne(navigator: NavController) {
                             text = "Composable1"
                         )
                         Button(onClick = {
-//                        navigator.navigate(ComposableTwoDestination())
                         }) {
-                            Text("Press me")
+                            Text("Composable1")
                         }
                     }
                 }

@@ -23,3 +23,4 @@ rootProject.name = "DestinationDemo"
 include(":app")
 include(":features:composableone")
 include(":core:common")
+include(":features:bottomnavmod")

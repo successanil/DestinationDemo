@@ -87,6 +87,7 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation (project(":core:common"))
     implementation (project(":features:composableone"))
+    implementation(project(":features:bottomnavmod"))
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
