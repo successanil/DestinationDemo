@@ -36,6 +36,5 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingPreview() {
     DestinationDemoTheme {
-//        Greeting("Android")
     }
 }
